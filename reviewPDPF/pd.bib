@@ -1,4 +1,4 @@
-@article{doi:10.1177/1081286518803411,
+@article{1081286518803411,
 	abstract = { Peridynamics (PD) is a novel continuum mechanics theory established by Stewart Silling in 2000. The roots of PD can be traced back to the early works of Gabrio Piola according to dell{\rq}Isola et al. PD has been attractive to researchers as it is a non-local formulation in an integral form, unlike the local differential form of classical continuum mechanics. Although the method is still in its infancy, the literature on PD is fairly rich and extensive. The prolific growth in PD applications has led to a tremendous number of contributions in various disciplines. This manuscript aims to provide a concise description of the PD theory together with a review of its major applications and related studies in different fields to date. Moreover, we succinctly highlight some lines of research that are yet to be investigated. },
 	author = {Javili, Ali and Morasata, Rico and Oterkus, Erkan and Oterkus, Selda},
 	doi = {10.1177/1081286518803411},
@@ -13,6 +13,36 @@
 },
 	volume = {24},
 	year = {2019}
+}
+
+@article{wildmangazonas,
+	author = {Wildman, Raymond A. and Gazonas, George A.},
+	journal = {International Journal of Fracture},
+	pages = {39--52},
+	publisher = {Springer},
+	title = {A finite difference-augmented peridynamics methodfor reducing wave dispersion},
+	volume = {190},
+	year = {2014}
+}
+
+@article{parksyueyoutrask,
+	author = {Trask, Nathaniel and You, Huaiqian and Yu, Yue and Parks, Michael L.},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	pages = {151--165},
+	publisher = {Springer},
+	title = {An asymptotically compatible meshfree quadrature rule for nonlocal problems with applications to peridynamics },
+	volume = {343},
+	year = {2007}
+}
+
+@article{CuckerSmail,
+	author = {Cucker, F and Smale, S},
+	journal = {Trans. Autom. Control},
+	pages = {852--862},
+	publisher = {Springer},
+	title = {Emergent behavior in flocks},
+	volume = {52},
+	year = {2007}
 }
 
 @article{diehl2019review,
@@ -121,10 +151,19 @@
 }
 
 @article{diehl2018implementation,
-	author = {Diehl, Patrick and Jha, Prashant K and Kaiser, Hartmut and Lipton, Robert and Levesque, Martin},
-	journal = {arXiv preprint arXiv:1806.06917},
-	title = {Implementation of Peridynamics utilizing HPX--the C++ standard library for parallelism and concurrency},
-	year = {2018}
+	abstract = {On modern supercomputers, asynchronous many task systems are emerging to address the new architecture of computational nodes. Through this shift of increasing cores per node, a new programming model with focus on handling of the fine-grain parallelism with increasing amount of cores per computational node is needed. Asynchronous Many Task (AMT) run time systems represent a paradigm for addressing the fine-grain parallelism. They handle the increasing amount of threads per node and concurrency. HPX, a open source C++ standard library for parallelism and concurrency, is one AMT which is conforming to the C++ standard. Motivated by the impressive performance of asynchronous task-based parallelism through HPX to N-body problem and astrophysics simulation, in this work, we consider its application to the Peridynamics theory. Peridynamics is a non-local generalization of continuum mechanics tailored to address discontinuous displacement fields arising in fracture mechanics. Peridynamics requires considerable computing resources, owing to its non-local nature of formulation, offering a scope for improved computing performance via asynchronous task-based parallelism. Our results show that HPX-based peridynamic computation is scalable, and the scalability is in agreement with the theory. In addition to the scalability, we also show the validation results and the mesh convergence results. For the validation, we consider implicit time integration and compare the result with the classical continuum mechanics (CCM) (peridynamics under small deformation should give similar results as CCM). For the mesh convergence, we consider explicit time integration and show that the results are in agreement with theoretical claims in previous works.},
+	author = {Diehl, Patrick and Jha, Prashant K. and Kaiser, Hartmut and Lipton, Robert and L{\'e}vesque, Martin},
+	day = {04},
+	doi = {10.1007/s42452-020-03784-x},
+	issn = {2523-3971},
+	journal = {SN Applied Sciences},
+	month = {Dec},
+	number = {12},
+	pages = {2144},
+	title = {An asynchronous and task-based implementation of peridynamics utilizing HPX---the C++ standard library for parallelism and concurrency},
+	url = {https://doi.org/10.1007/s42452-020-03784-x},
+	volume = {2},
+	year = {2020}
 }
 
 @article{silling2007peridynamic,
@@ -304,8 +343,8 @@
 @article{diehl2016numerical,
 	author = {Diehl, P and Lipton, R and Schweitzer, MA},
 	journal = {Institut f{\"u}r Numerische Simulation Preprint},
-	number = {1630},
 	title = {Numerical verification of a bond-based softening peridynamic model for small displacements: deducing material parameters from classical linear theory},
+	volume = {1630},
 	year = {2016}
 }
 
@@ -320,8 +359,143 @@
 	year = {2016}
 }
 
+@article{lipton2014horizonlimit,
+	author = {Lipton, Robert},
+	journal = {Journal of Elasticity},
+	pages = {21--50},
+	publisher = {Springer},
+	title = {Dynamic brittle fracture as a small horizon limit of peridynamics},
+	volume = {117},
+	year = {2014}
+}
+
+@article{Trivasa2015,
+	author = {{Trygve K. Karper}, Antoine Mellet and Trivisa, Konstantina},
+	journal = {Mathematical Models and methods in the Applied Sciences M3AS},
+	pages = {131--163},
+	publisher = {World Scientific},
+	title = {Hydrodynamic limit of the kinetic Cucker--Smale flocking model},
+	volume = {25},
+	year = {2015}
+}
+
+@article{Tadmore2020,
+	author = {Tadmor, Ruiwen Shu \& Eitan},
+	journal = {Archive for Rational Mechanics and Analysis},
+	pages = {347--1381},
+	publisher = {Springer},
+	title = {Flocking Hydrodynamics with External Potentials},
+	volume = {238},
+	year = {2020}
+}
+
+@article{emmrichpuhst2016,
+	author = {Puhst, Etienne Emmrich \& Dimitri},
+	journal = {Journal of Elasticity},
+	pages = {245--252},
+	publisher = {Springer},
+	title = {A short note on modelling damage in peridynamics},
+	volume = {123},
+	year = {2016}
+}
+
+@article{dutian2018,
+	author = {Du, Qiang and Tao, Yunzhe and Tian, Xiaochuan},
+	journal = {Journal of Elasticity},
+	pages = {197--218},
+	publisher = {Springer},
+	title = {A peridynamic model of fracture mechanics with bond-breaking},
+	volume = {132},
+	year = {2017}
+}
+
+@article{figali2017,
+	author = {Figalli, Alessio and Kang, Moon-Jin},
+	journal = {Analysis \& PDE},
+	keywords = {Hydrodynamic limit, kinetic Cucker--Smale model, local alignment, pressureless Euler system, Relative entropy, Wasserstein distance},
+	number = {3},
+	pages = {843 -- 866},
+	publisher = {MSP},
+	title = {A rigorous derivation from the kinetic Cucker--Smale model to the pressureless Euler system with nonlocal alignment},
+	volume = {12},
+	year = {2019}
+}
+
+@article{lipton2018free,
+	author = {Lipton, Robert and Said, Eyad and Jha, Prashant},
+	journal = {Journal of Elasticity},
+	number = {2},
+	pages = {129--153},
+	publisher = {Springer},
+	title = {Free damage propagation with memory},
+	volume = {133},
+	year = {2018}
+}
+
+@article{jha2017finite,
+	author = {Jha, Prashant Kumar and Lipton, Robert},
+	journal = {Discrete \& Continuous Dynamical Systems - B},
+	number = {3},
+	pages = {1675--1710},
+	title = {Finite element approximation of nonlocal dynamic fracture models},
+	volume = {26},
+	year = {2021}
+}
+
+@article{jha2018numerical,
+	author = {Jha, Prashant K and Lipton, Robert},
+	journal = {SIAM Journal on Numerical Analysis},
+	number = {2},
+	pages = {906--941},
+	publisher = {SIAM},
+	title = {Numerical analysis of nonlocal fracture models in Holder space},
+	volume = {56},
+	year = {2018}
+}
+
+@article{jhalipton2020,
+	author = {Jha, Prashant K and Lipton, Robert},
+	journal = {International Journal of Fracture},
+	number = {1},
+	pages = {81--95},
+	publisher = {Kluwer},
+	title = {Kinetic relations and local energy balance for LEFM from a nonlocal peridynamic model},
+	volume = {226},
+	year = {2020}
+}
+
+@article{lipton2019complex,
+	author = {Lipton, Robert P and Lehoucq, Richard B and Jha, Prashant K},
+	journal = {Journal of Peridynamics and Nonlocal Modeling},
+	number = {2},
+	pages = {122--130},
+	publisher = {Springer},
+	title = {Complex fracture nucleation and evolution with nonlocal elastodynamics},
+	volume = {1},
+	year = {2019}
+}
+
+@article{liptonjha2021,
+	author = {Lipton, Robert P and Jha, Prashant K},
+	doi = {10.1007/s00030-021-00683-x},
+	journal = {Nonlinear Differential Equations and Applications},
+	publisher = {Springer},
+	title = {Nonlocal elastodynamics and fracture},
+	year = {2021}
+}
+
+@article{dalmasotoader2019,
+	author = {DalMaso, Gianni and Toader, Rodica},
+	journal = {Journal of Differential Equations},
+	number = {6},
+	pages = {3209--3246},
+	publisher = {Elsevier},
+	title = {On the Cauchy problem for the wave equation on time-dependent domains},
+	volume = {266},
+	year = {2019}
+}
+
 @article{OGRADY20144572,
-	abstract = {This paper builds on the peridynamic state-based beam model to represent the bending of a Kirchhoff--Love plate. This model is non-ordinary and derived from the concept of a rotational spring between bonds. A simple extension of the beam model reproduces plate bending with a Poisson ratio of \ensuremath{\nu}=13, which can be combined with a 2D linear peridynamic solid model to simulate mixed in-plane and transverse loading. The addition of an isotropic bending state term extends the model to arbitrary Poisson ratios. Simple test cases demonstrate the model{\rq}s performance.},
 	author = {O{\rq}Grady, James and Foster, John},
 	doi = {10.1016/j.ijsolstr.2014.09.003},
 	issn = {0020-7683},
@@ -900,7 +1074,11 @@
 
 @article{bobaru2011adaptive,
 	author = {Bobaru, Florin and Ha, Youn Doh},
-	title = {Adaptive refinement and multiscale modeling in 2D peridynamics},
+	journal = {International Journal for Multiscale Computational Engineering},
+	number = {6},
+	publisher = {Begel House Inc.},
+	title = {ADAPTIVE REFINEMENT AND MULTISCALE MODELING IN 2D PERIDYNAMICS},
+	volume = {9},
 	year = {2011}
 }
 
@@ -1208,13 +1386,16 @@
 	year = {2011}
 }
 
-@misc{mehrmashhadi_bahadori_bobaru_2020,
+@article{mehrmashhadi_bahadori_bobaru_2020,
+	abstract = {We test two peridynamic models and one phase field model against recent experimental tests on dynamic fracture/crack branching in glass induced by impact. We find important differences in results among the two peridynamic models (one using the meshfree discretization, the other being the LS-DYNA{\rq}s discontinuous-Galerkin implementation) and the phase-field model. We monitor the crack branching location, angle of crack branching, the time-profile of crack propagation speed, and some fine features seen experimentally: small twists/kinks in the crack paths near their end. The results shown here provide guidance in selecting the most appropriate solution method for dynamic brittle fracture in glass and explain likely reasons behind the failure of some of the models to correctly predict the observed behavior.},
 	author = {Mehrmashhadi, Javad and Bahadori, Mohammadreza and Bobaru, Florin},
-	doi = {10.31224/osf.io/4zc69},
-	month = {Jan},
-	publisher = {engrXiv},
-	title = {Comparison of peridynamic and phase-field models for dynamic brittle fracture in glassy materials},
-	url = {engrxiv.org/4zc69},
+	doi = {10.1016/j.engfracmech.2020.107355},
+	issn = {0013-7944},
+	journal = {Engineering Fracture Mechanics},
+	keywords = {Brittle facture, crack branching, glass, peridynamics, phase-field, LS-DYNA},
+	pages = {107355},
+	title = {On validating peridynamic models and a phase-field model for dynamic brittle fracture in glass},
+	url = {http://www.sciencedirect.com/science/article/pii/S001379442030936X},
 	year = {2020}
 }
 
@@ -1635,17 +1816,6 @@
 	year = {2015}
 }
 
-@article{jha2018numerical,
-	author = {Jha, Prashant K and Lipton, Robert},
-	journal = {International Journal for Numerical Methods in Engineering},
-	number = {13},
-	pages = {1389--1410},
-	publisher = {Wiley Online Library},
-	title = {Numerical convergence of nonlinear nonlocal continuum models to local elastodynamics},
-	volume = {114},
-	year = {2018}
-}
-
 @article{jha2019numerical,
 	author = {Jha, Prashant K and Lipton, Robert},
 	journal = {Computer Methods in Applied Mechanics and Engineering},
@@ -1895,13 +2065,576 @@
 	year = {2015}
 }
 
+@article{behera2020peridynamic,
+	author = {Behera, Deepak and Roy, Pranesh and Madenci, Erdogan},
+	journal = {International Journal of Non-Linear Mechanics},
+	pages = {103564},
+	publisher = {Elsevier},
+	title = {Peridynamic correspondence model for finite elastic deformation and rupture in Neo-Hookean materials},
+	volume = {126},
+	year = {2020}
+}
+
+@article{silling2001peridynamic,
+	author = {Silling, SA},
+	journal = {Submission for the},
+	title = {Peridynamic modeling of the Kalthoff--Winkler experiment},
+	year = {2001}
+}
+
+@article{prudhomme2020treatment,
+	author = {Prudhomme, Serge and Diehl, Patrick},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	pages = {113391},
+	publisher = {Elsevier},
+	title = {On the treatment of boundary conditions for bond-based peridynamic models},
+	volume = {372},
+	year = {2020}
+}
+
+@article{ahrens2005paraview,
+	author = {Ahrens, James and Geveci, Berk and Law, Charles},
+	journal = {The visualization handbook},
+	publisher = {Elsevier M{\"u}nchen},
+	title = {Paraview: An end-user tool for large data visualization},
+	volume = {717},
+	year = {2005}
+}
+
+@incollection{HPV:VisIt,
+	author = {Childs, Hank and Brugger, Eric and Whitlock, Brad and Meredith, Jeremy and Ahern, Sean and Pugmire, David and Biagas, Kathleen and Miller, Mark and Harrison, Cyrus and Weber, Gunther H. and Krishnan, Hari and Fogal, Thomas and Sanderson, Allen and Garth, Christoph and Bethel, E. Wes and Camp, David and R{\"u}bel, Oliver and Durant, Marc and Favre, Jean M. and Navr{\'a}til, Paul},
+	booktitle = {High Performance Visualization--Enabling Extreme-Scale Scientific Insight},
+	month = {Oct},
+	pages = {357--372},
+	publisher = {Open Access Publications from the University of California},
+	title = {VisIt: An End-User Tool For Visualizing and Analyzing Very Large Data},
+	year = {2012}
+}
+
+@article{behzadinasabrevisiting,
+	author = {Behzadinasab, Masoud and Foster, John T},
+	journal = {International Journal of Fracture},
+	publisher = {Springer},
+	title = {Revisiting the third Sandia Fracture Challenge: a bond-associated, semi-Lagrangian peridynamic approach to modeling large deformation and ductile fracture},
+	year = {2020}
+}
+
+@article{silling2003deformation,
+	author = {Silling, STEWART A and Zimmermann, Markus and Abeyaratne, Rohan},
+	journal = {Journal of Elasticity},
+	number = {1-3},
+	pages = {173--190},
+	publisher = {Springer},
+	title = {Deformation of a peridynamic bar},
+	volume = {73},
+	year = {2003}
+}
+
 @techreport{wfm2020-report,
 	author = {Silling, Stewart and Wick, Thomas and Ravi-Chandar, Krishnaswamy and Guilleminot, Johann and Dolbow, John and Finberg, Jay and Diehl, Patrick and Prudhomme, Serge and Lipton, Robert and Seleson, Pablo},
-	booktitle = {ORNL/TM-2020/1714},
 	editor = {Diehl, Patrick and Prudhomme, Serge and Seleson, Pablo},
 	institution = {Oak Ridge National Laboratory},
 	month = {Nov},
+	number = {ORNL/TM-2020/1714},
 	title = {Workshop on Experimental and Computational Fracture Mechanics 2020},
+	year = {2020}
+}
+
+@article{silling2010crack,
+	author = {Silling, Stewart A and Weckner, O and Askari, E and Bobaru, Florin},
+	journal = {International Journal of Fracture},
+	number = {1-2},
+	pages = {219--227},
+	publisher = {Springer},
+	title = {Crack nucleation in a peridynamic solid},
+	volume = {162},
+	year = {2010}
+}
+
+@inproceedings{littlewood2011nonlocal,
+	author = {Littlewood, David J},
+	booktitle = {ASME International Mechanical Engineering Congress and Exposition},
+	pages = {567--576},
+	title = {A nonlocal approach to modeling crack nucleation in AA 7075-T651},
+	volume = {54945},
+	year = {2011}
+}
+
+@article{niazi2020crack,
+	abstract = {Peridynamic (PD) models of bodies without pre-cracks, based on a single fracture parameter (associated with the critical fracture energy), produce different strengths when different horizon sizes are used to simulate crack nucleation under quasi-static conditions. To maintain the same strength and fracture energy under different horizon sizes, extra parameters have to be introduced in the failure model. Bilinear and trilinear bond force-strain relationships have been proposed in the literature for crack propagation in quasi-brittle materials. In this paper we study crack nucleation in a plate with a hole under quasi-static loading using bilinear and trilinear PD models. We provide analytical formulas to calibrate the models to measurable material properties. We show convergence for both strength and fracture toughness. The bilinear PD constitutive model works well for both brittle (e.g. ceramics) and quasi-brittle (e.g. concrete) systems, while the trilinear version is more suited for quasi-brittle fracture behavior. We also find that for quasi-brittle fracture, a model that accounts, stochastically, for the presence of small-scale pores/defects performs better than a homogenized model. A wedge-splitting test in concrete and crack nucleation in a quasi-isotropic composite plate with a circular hole are used to demonstrate the model{\rq}s performance. In contrast with other models, the current formulation does not depend on the sample geometry.},
+	author = {Niazi, Sina and Chen, Ziguang and Bobaru, Florin},
+	doi = {10.1016/j.tafmec.2020.102855},
+	issn = {0167-8442},
+	journal = {Theoretical and Applied Fracture Mechanics},
+	keywords = {Crack nucleation, Peridynamics, Failure model, Crack growth, Strength, Fracture energy},
+	pages = {102855},
+	title = {Crack nucleation in brittle and quasi-brittle materials: A peridynamic analysis},
+	url = {https://www.sciencedirect.com/science/article/pii/S0167844220304316},
+	volume = {112},
+	year = {2021}
+}
+
+@article{delorme2020extracting,
+	author = {Delorme, Rolland and Diehl, Patrick and Tabiai, Ilyass and Lebel, Louis Laberge and L{\'e}vesque, Martin},
+	journal = {Journal of Peridynamics and Nonlocal Modeling},
+	pages = {1--25},
+	publisher = {Springer},
+	title = {Extracting Constitutive Mechanical Parameters in Linear Elasticity Using the Virtual Fields Method Within the Ordinary State-Based Peridynamic Framework},
+	year = {2020}
+}
+
+@article{Kaiser2020,
+	author = {Kaiser, Hartmut and Diehl, Patrick and Lemoine, Adrian S. and Lelbach, Bryce Adelstein and Amini, Parsa and Berge, Agust{\'\i}n and Biddiscombe, John and Brandt, Steven R. and Gupta, Nikunj and Heller, Thomas and Huck, Kevin and Khatami, Zahra and Kheirkhahan, Alireza and Reverdell, Auriane and Shirzad, Shahrzad and Simberg, Mikael and Wagle, Bibek and Wei, Weile and Zhang, Tianyi},
+	doi = {10.21105/joss.02352},
+	journal = {Journal of Open Source Software},
+	number = {53},
+	pages = {2352},
+	publisher = {The Open Journal},
+	title = {HPX - The C++ Standard Library for Parallelism and Concurrency},
+	url = {https://doi.org/10.21105/joss.02352},
+	volume = {5},
+	year = {2020}
+}
+
+@article{emmrich2007peridynamic,
+	author = {Emmrich, Etienne and Weckner, Olaf},
+	journal = {Mathematical Modelling and Analysis},
+	number = {1},
+	pages = {17--27},
+	publisher = {Taylor \& Francis},
+	title = {The peridynamic equation and its spatial discretisation},
+	volume = {12},
+	year = {2007}
+}
+
+@article{wang2012fast,
+	author = {Wang, Hong and Tian, Hao},
+	journal = {Journal of Computational Physics},
+	number = {23},
+	pages = {7730--7738},
+	publisher = {Elsevier},
+	title = {A fast Galerkin method with efficient matrix assembly and storage for a peridynamic model},
+	volume = {231},
+	year = {2012}
+}
+
+@article{prakash2020multi,
+	author = {Prakash, Naveen and Stewart, Ross J},
+	journal = {Journal of Peridynamics and Nonlocal Modeling},
+	pages = {1--35},
+	publisher = {Springer},
+	title = {A multi-threaded method to assemble a sparse stiffness matrix for quasi-static solutions of linearized bond-based peridynamics},
+	year = {2020}
+}
+
+@article{cassell1976numerical,
+	author = {Cassell, AC and Hobbs, RE},
+	journal = {International Journal for numerical methods in engineering},
+	number = {6},
+	pages = {1407--1410},
+	publisher = {Wiley Online Library},
+	title = {Numerical stability of dynamic relaxation analysis of non-linear structures},
+	volume = {10},
+	year = {1976}
+}
+
+@article{topping1994parallel,
+	author = {Topping, BHV and Khan, AI},
+	journal = {Engineering computations},
+	number = {6},
+	pages = {513--548},
+	publisher = {Swansea [Glamorshire]: Pineridge Press, c1984-},
+	title = {Parallel computation schemes for dynamic relaxation},
+	volume = {11},
+	year = {1994}
+}
+
+@article{kilic2010adaptive,
+	author = {Kilic, B and Madenci, Erdogan},
+	journal = {Theoretical and Applied Fracture Mechanics},
+	number = {3},
+	pages = {194--204},
+	publisher = {Elsevier},
+	title = {An adaptive dynamic relaxation method for quasi-static simulations using the peridynamic theory},
+	volume = {53},
+	year = {2010}
+}
+
+@article{arnoldi1951principle,
+	author = {Arnoldi, W.E.},
+	journal = {Quart. Appl. Math},
+	pages = {17--29},
+	title = {The principle of minimized iteration in the solution of the matrix eigenvafue problem, },
+	volume = {9},
+	year = {1951}
+}
+
+@article{saad1981krylov,
+	author = {Saad, Yousef},
+	journal = {Mathematics of computation},
+	number = {155},
+	pages = {105--126},
+	title = {Krylov subspace methods for solving large unsymmetric linear systems},
+	volume = {37},
+	year = {1981}
+}
+
+@article{saad1986gmres,
+	author = {Saad, Youcef and Schultz, Martin H},
+	journal = {SIAM Journal on scientific and statistical computing},
+	number = {3},
+	pages = {856--869},
+	publisher = {SIAM},
+	title = {GMRES: A generalized minimal residual algorithm for solving nonsymmetric linear systems},
+	volume = {7},
+	year = {1986}
+}
+
+@article{bitzek2006structural,
+	author = {Bitzek, Erik and Koskinen, Pekka and G{\"a}hler, Franz and Moseler, Michael and Gumbsch, Peter},
+	journal = {Physical review letters},
+	number = {17},
+	pages = {170201},
+	publisher = {APS},
+	title = {Structural relaxation made simple},
+	volume = {97},
+	year = {2006}
+}
+
+@article{shiihara2019fast,
+	author = {Shiihara, Yoshinori and Tanaka, Shoki and Yoshikawa, Nobuhiro},
+	journal = {Mechanical Engineering Journal},
+	number = {3},
+	pages = {18--00363},
+	publisher = {The Japan Society of Mechanical Engineers},
+	title = {Fast quasi-implicit NOSB peridynamic simulation based on FIRE algorithm},
+	volume = {6},
+	year = {2019}
+}
+
+@article{bobaru2011adaptive-2,
+	author = {Bobaru, Florin and Ha, Youn Doh},
+	journal = {International Journal for Multiscale Computational Engineering},
+	number = {6},
+	publisher = {Begel House Inc.},
+	title = {Adaptive refinement and multiscale modeling in 2D peridynamics},
+	volume = {9},
+	year = {2011}
+}
+
+@article{nguyen2021PDML,
+	author = {Nguyen, Cong Tien and Oterkus, Selda and Oterkus, Erkan},
+	doi = {10.1016/j.tafmec.2020.102872},
+	journal = {Theoretical and Applied Fracture Mechanics},
+	pages = {102872},
+	publisher = {Elsevier},
+	title = {A physics-guided machine learning model for two-dimensional structures based on ordinary state-based peridynamics},
+	volume = {112},
+	year = {2021}
+}
+
+@book{ogden1997non,
+	author = {Ogden, Raymond W},
+	publisher = {Courier Corporation},
+	title = {Non-linear elastic deformations},
+	year = {1997}
+}
+
+@article{rivlin1948large,
+	author = {Rivlin, RS},
+	journal = {Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences},
+	number = {835},
+	pages = {379--397},
+	publisher = {The Royal Society London},
+	title = {Large elastic deformations of isotropic materials IV. Further developments of the general theory},
+	volume = {241},
+	year = {1948}
+}
+
+@inproceedings{xu2018reformulating,
+	author = {Xu, Liyou and He, Xiaowei and Chen, Wei and Li, Sheng and Wang, Guoping},
+	booktitle = {Computer Graphics Forum},
+	organization = {Wiley Online Library},
+	pages = {121--130},
+	title = {Reformulating hyperelastic materials with peridynamic modeling},
+	volume = {37},
+	year = {2018}
+}
+
+@article{bang2016peridynamic,
+	author = {Bang, Dongjun},
+	publisher = {The University of Arizona.},
+	title = {Peridynamic modeling of hyperelastic materials},
+	year = {2016}
+}
+
+@article{bang2017peridynamic,
+	author = {Bang, DJ and Madenci, Erdogan},
+	journal = {Journal of Engineering Materials and Technology},
+	number = {3},
+	publisher = {American Society of Mechanical Engineers Digital Collection},
+	title = {Peridynamic modeling of hyperelastic membrane deformation},
+	volume = {139},
+	year = {2017}
+}
+
+@inproceedings{waxman2020implementation,
+	author = {Waxman, Rachel and Guven, Ibrahim},
+	booktitle = {AIAA Scitech 2020 Forum},
+	pages = {0725},
+	title = {Implementation of a Neo-Hookean material model in state-based peridynamics to represent nylon bead behavior during high-speed impact},
+	year = {2020}
+}
+
+@article{behzadinasab2020semi,
+	author = {Behzadinasab, Masoud and Foster, John T},
+	journal = {Journal of the Mechanics and Physics of Solids},
+	pages = {103862},
+	publisher = {Elsevier},
+	title = {A semi-Lagrangian constitutive correspondence framework for peridynamics},
+	volume = {137},
+	year = {2020}
+}
+
+@article{behzadinasab2019third,
+	author = {Behzadinasab, Masoud and Foster, John T},
+	journal = {International Journal of Fracture},
+	number = {1},
+	pages = {97--109},
+	publisher = {Springer},
+	title = {The third Sandia Fracture Challenge: peridynamic blind prediction of ductile fracture characterization in additively manufactured metal},
+	volume = {218},
+	year = {2019}
+}
+
+@article{mei2021role,
+	author = {Mei, Tie and Zhao, Jiangming and Liu, Zian and Peng, Xuhao and Chen, Ziguang and Bobaru, Florin},
+	journal = {Journal of Scientific Computing},
+	number = {2},
+	pages = {1--22},
+	publisher = {Springer},
+	title = {The Role of Boundary Conditions on Convergence Properties of Peridynamic Model for Transient Heat Transfer},
+	volume = {87},
+	year = {2021}
+}
+
+@article{xu2018elastic,
+	author = {Xu, Zhanping and Zhang, Guanfeng and Chen, Ziguang and Bobaru, Florin},
+	journal = {International Journal of Fracture},
+	number = {1},
+	pages = {203--222},
+	publisher = {Springer},
+	title = {Elastic vortices and thermally-driven cracks in brittle materials with peridynamics},
+	volume = {209},
+	year = {2018}
+}
+
+@article{ronsin1995experimental,
+	author = {Ronsin, O and Heslot, F and Perrin, B},
+	journal = {Physical review letters},
+	number = {12},
+	pages = {2352},
+	publisher = {APS},
+	title = {Experimental study of quasistatic brittle crack propagation},
+	volume = {75},
+	year = {1995}
+}
+
+@article{ronsin1998dynamics,
+	author = {Ronsin, O and Perrin, B},
+	journal = {Physical Review E},
+	number = {6},
+	pages = {7878},
+	publisher = {APS},
+	title = {Dynamics of quasistatic directional crack growth},
+	volume = {58},
+	year = {1998}
+}
+
+@article{yang2001crack,
+	author = {Yang, B and Ravi-Chandar, K},
+	journal = {Journal of the Mechanics and Physics of Solids},
+	number = {1},
+	pages = {91--130},
+	publisher = {Elsevier},
+	title = {Crack path instabilities in a quenched glass plate},
+	volume = {49},
+	year = {2001}
+}
+
+@book{lemaitremechanics,
+	author = {Lemaitre, J and Chaboche, JL},
+	publisher = {Cambridge University Press},
+	title = {Mechanics of Solid Materials},
+	year = {1994}
+}
+
+@article{bavzant2002nonlocal,
+	author = {Ba{\v z}ant, Zden{\v e}k P and Jir{\'a}sek, Milan},
+	journal = {Journal of engineering mechanics},
+	number = {11},
+	pages = {1119--1149},
+	publisher = {American Society of Civil Engineers},
+	title = {Nonlocal integral formulations of plasticity and damage: survey of progress},
+	volume = {128},
+	year = {2002}
+}
+
+@article{mazars1984application,
+	author = {Mazars, Jacky},
+	journal = {THESE DE DOCTEUR ES SCIENCES PRESENTEE A L'UNIVERSITE PIERRE ET MARIE CURIE-PARIS 6},
+	title = {Application de la m{\'e}canique de l'endommagement au comportement non lin{\'e}aire et {\`a} la rupture du b{\'e}ton de structure},
+	year = {1984}
+}
+
+@article{chen2019peridynamic,
+	author = {Chen, Ziguang and Niazi, Sina and Bobaru, Florin},
+	journal = {International Journal of Rock Mechanics and Mining Sciences},
+	pages = {104059},
+	publisher = {Elsevier},
+	title = {A peridynamic model for brittle damage and fracture in porous materials},
+	volume = {122},
+	year = {2019}
+}
+
+@article{mehrmashhadi2019stochastically,
+	author = {Mehrmashhadi, Javad and Chen, Ziguang and Zhao, Jiangming and Bobaru, Florin},
+	journal = {Composites Science and Technology},
+	pages = {107770},
+	publisher = {Elsevier},
+	title = {A stochastically homogenized peridynamic model for intraply fracture in fiber-reinforced composites},
+	volume = {182},
+	year = {2019}
+}
+
+@article{freimanis2017mesh,
+	author = {Freimanis, Andris and Paeglitis, Ainars},
+	journal = {Procedia Engineering},
+	pages = {284--291},
+	publisher = {Elsevier},
+	title = {Mesh sensitivity in peridynamic quasi-static simulations},
+	volume = {172},
+	year = {2017}
+}
+
+@article{wang2019studies,
+	author = {Wang, Fei and Ma, Yu{\rq}e and Guo, Yanning and Huang, Wei},
+	journal = {Advances in Materials Science and Engineering},
+	publisher = {Hindawi},
+	title = {Studies on Quasi-Static and Fatigue Crack Propagation Behaviours in Friction Stir Welded Joints Using Peridynamic Theory},
+	volume = {2019},
+	year = {2019}
+}
+
+@article{ISIET2021103740,
+	abstract = {Failure and damage of natural and man-made materials as a result of impact loading needs to be understood as it is a phenomena that occurs in many fields of science and engineering. Impact mechanics is typically modelled using a wide range of numerical approaches, such as rigid body dynamics and wave propagation. However, many of these methods are limited to capturing the impact of bodies but not the fracture mechanics, especially at weak spot regions like material interfaces, cracks, or voids. Imperfections decrease the strength of materials due to the presence of stress concentration regions leading to failure occurring at the lower stress levels. Therefore, due to the limitations in the classical theories, alternative methods need to be considered. Peridynamics, a non-local theory, is a reformulation of the classical continuum mechanics that uses integrals instead of spatial derivatives, which makes it a competent tool to study and predict impact-based fracture because of its ability to model discontinuities in different materials and predict the extent of damage. This review article provides an overview of different applications of peridynamics in modelling impact damage due to collision, and offers a brief summary of the peridynamic theory.},
+	author = {Isiet, Mewael and Mi{\v s}kovi{\'c}, Ilija and Mi{\v s}kovi{\'c}, Sanja},
+	doi = {10.1016/j.ijimpeng.2020.103740},
+	issn = {0734-743X},
+	journal = {International Journal of Impact Engineering},
+	keywords = {Impact mechanics, Fracture mechanics, Peridynamics, Non-local theory},
+	pages = {103740},
+	title = {Review of peridynamic modelling of material failure and damage due to impact},
+	url = {https://www.sciencedirect.com/science/article/pii/S0734743X20308101},
+	volume = {147},
+	year = {2021}
+}
+
+@article{hattori2021review,
+	author = {Hattori, Gabriel and Hobbs, Mark and Orr, John},
+	journal = {Archives of Computational Methods in Engineering},
+	pages = {1--32},
+	publisher = {Springer},
+	title = {A review on the developments of peridynamics for reinforced concrete structures},
+	year = {2021}
+}
+
+@article{zhou2021state,
+	author = {Zhou, Xiao-Ping and Wang, Yun-Teng},
+	journal = {Journal of Engineering Mechanics},
+	number = {1},
+	pages = {03120001},
+	publisher = {American Society of Civil Engineers},
+	title = {State-of-the-Art Review on the Progressive Failure Characteristics of Geomaterials in Peridynamic Theory},
+	volume = {147},
+	year = {2021}
+}
+
+@article{le2018surface,
+	author = {Le, QV and Bobaru, Florin},
+	journal = {Computational Mechanics},
+	number = {4},
+	pages = {499--518},
+	publisher = {Springer},
+	title = {Surface corrections for peridynamic models in elasticity and fracture},
+	volume = {61},
+	year = {2018}
+}
+
+@book{BobaruFosterGeubelleSilling_2,
+	author = {Bobaru, Florin and Foster, John T and Geubelle, Philippe H and Silling, Stewart A},
+	publisher = {CRC press},
+	title = {Handbook of peridynamic modeling},
+	year = {2016}
+}
+
+@incollection{madenci2014coupling,
+	author = {Madenci, Erdogan and Oterkus, Erkan},
+	booktitle = {Peridynamic Theory and Its Applications},
+	pages = {191--202},
+	publisher = {Springer},
+	title = {Coupling of the peridynamic theory and finite element method},
+	year = {2014}
+}
+
+@book{PAM_doi:10.1007/978-1-4614-8465-3_2_2,
+	author = {Madenci, Erdogan and Oterkus, Erkan},
+	booktitle = {Peridynamic Theory and Its Applications},
+	pages = {19--43},
+	publisher = {Springer},
+	title = {Peridynamic theory},
+	year = {2014}
+}
+
+@inproceedings{gerstle2005peridynamic,
+	author = {Gerstle, W and Sau, N and Silling, S},
+	booktitle = {Proceedings of 18th international conference on structural mechanics in reactor technology},
+	title = {Peridynamic modeling of plain and reinforced concrete structures},
+	year = {2005}
+}
+
+@article{OTERKUS201471_2,
+	author = {Oterkus, Selda and Madenci, Erdogan and Agwai, Abigail},
+	journal = {Journal of Computational Physics},
+	pages = {71--96},
+	publisher = {Elsevier},
+	title = {Peridynamic thermal diffusion},
+	volume = {265},
+	year = {2014}
+}
+
+@article{SHEN2021102987,
+	abstract = {This study presents a peridynamic model with an improved energy-based surface correction to simulate fractures of random porous materials. There exists a surface effect due to incomplete neighborhoods of boundary or near-boundary points in peridynamics. A surface correction approach is proposed to correct the surface effect on or near the boundaries, including outer boundaries of the materials and boundaries of inner pores. The correction factor is obtained based on the equivalence between the strain energy density in classical continuum mechanics and the elastic energy density in peridynamics. The algorithm procedure for the corrected model based on the finite element analysis is brought forward in detail. The availability of the proposed corrected peridynamic model is verified by comparing the results against the results by the classical continuum mechanics model. Moreover, the effect of the surface correction on the crack growth path and the impact of random distributions of pores on the fractures of porous materials are also investigated. Numerical results demonstrate that the present method can effectively correct the surface effect of random porous materials, especially around the boundary of inner pores, where shows a more obvious surface effect.},
+	author = {Shen, Shangkun and Yang, Zihao and Han, Fei and Cui, Junzhi and Zhang, Jieqiong},
+	doi = {10.1016/j.tafmec.2021.102987},
+	issn = {0167-8442},
+	journal = {Theoretical and Applied Fracture Mechanics},
+	keywords = {Random porous materials, Peridynamics, Surface correction, Fracture simulation, Crack growth path},
+	pages = {102987},
+	title = {Peridynamic modeling with energy-based surface correction for fracture simulation of random porous materials},
+	url = {https://www.sciencedirect.com/science/article/pii/S0167844221000951},
+	volume = {114},
+	year = {2021}
+}
+
+@article{tan2020peridynamics,
+	author = {Tan, Yang and Liu, Qiwen and Zhang, Lianmeng and Liu, Lisheng and Lai, Xin},
+	journal = {Materials},
+	number = {6},
+	pages = {1340},
+	publisher = {Multidisciplinary Digital Publishing Institute},
+	title = {Peridynamics model with surface correction near insulated cracks for transient heat conduction in functionally graded materials},
+	volume = {13},
 	year = {2020}
 }
 

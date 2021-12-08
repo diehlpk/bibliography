@@ -28,6 +28,18 @@
 	year = {2016}
 }
 
+
+@article{Kumaretal,
+	author = {Kumar, Aditya and Bourdin, Blase and Francfort, Gilles and Lopez-Pamies, Oscar},
+	journal = {Journal of the Mechanics and Physics of Solids},
+	pages = {104027},
+	publisher = {Elsevier},
+	title = {Revisiting nucleation in the phase-field approach to brittle fracture},
+	volume = {142},
+	year = {2020}
+}
+
+
 @article{WuHu20_aba,
 title = {Comprehensive implementations of phase-field damage models in Abaqus},
 journal = {Theoretical and Applied Fracture Mechanics},
@@ -361,6 +373,17 @@ keywords = "Porous media "
 	year = {2016}
 }
 
+
+@article{MumfordShah,
+	author = {Mumford, D and Shah, J},
+	journal = { Communications on Pure and Applied Mathematics},
+	pages = {577--685},
+	publisher = {Elsevier},
+	title = { Optimal approximations by piecewise smooth functions and associated variational problem},
+	volume = {42},
+	year = {1989}
+}
+
 @article{aranson2000continuum,
 	author = {Aranson, IS and Kalatsky, VA and Vinokur, VM},
 	journal = {Physical review letters},
@@ -434,15 +457,26 @@ keywords = "Porous media "
 }
 
 
-@article{monsterreviewpf,
-	author = {Wu, Jian-Ying and Nguyen, Vinh Phu and {Thanh Nguyen}, Chi and Sutula, Danas and Bordas, St{\'e}phane and Sinaie, Sina},
-	journal = {Advances in Applied Mechanics},
-	month = {09},
-	title = {Phase field modelling of fracture},
-	url = {https://www.sciencedirect.com/science/article/pii/S0065215619300134},
-	volume = {53},
-	year = {2019}
+
+
+@incollection{monsterreviewpf,
+title = {Chapter One - Phase-field modeling of fracture},
+editor = {Stéphane P.A. Bordas and Daniel S. Balint},
+series = {Advances in Applied Mechanics},
+publisher = {Elsevier},
+volume = {53},
+pages = {1-183},
+year = {2020},
+issn = {0065-2156},
+doi = {https://doi.org/10.1016/bs.aams.2019.08.001},
+url = {https://www.sciencedirect.com/science/article/pii/S0065215619300134},
+author = {Jian-Ying Wu and Vinh Phu Nguyen and Chi Thanh Nguyen and Danas Sutula and Sina Sinaie and Stéphane P.A. Bordas},
+keywords = {Computational failure mechanics, Fracture, Damage, Phase-field models, Variational approach to fracture, Cohesive zone model, Cracking},
+abstract = {Fracture is one of the most commonly encountered failure modes of engineering materials and structures. Prevention of cracking-induced failure is, therefore, a major concern in structural designs. Computational modeling of fracture constitutes an indispensable tool not only to predict the failure of cracking structures but also to shed insights into understanding the fracture processes of many materials such as concrete, rock, ceramic, metals, and biological soft tissues. This chapter provides an extensive overview of the literature on the so-called phase-field fracture/damage models (PFMs), particularly, for quasi-static and dynamic fracture of brittle and quasi-brittle materials, from the points of view of a computational mechanician. PFMs are the regularized versions of the variational approach to fracture which generalizes Griffith's theory for brittle fracture. They can handle topologically complex fractures such as initiation, intersecting, and branching cracks in both two and three dimensions with a quite straightforward implementation. One of our aims is to justify the gaining popularity of PFMs. To this end, both theoretical and computational aspects are discussed and extensive benchmark problems (for quasi-static and dynamic brittle/cohesive fracture) that are successfully and unsuccessfully solved with PFMs are presented. Unresolved issues for further investigations are also documented.}
 }
+
+
+
 
 @article{bourdin2014morphogenesis,
 	author = {Bourdin, Blaise and Marigo, Jean-Jacques and Maurini, Corrado and Sicsic, Paul},
@@ -1994,21 +2028,6 @@ keywords = "Phase-field fracture propagation, Non-isothermal fracture, Mesh adap
 abstract = "In this work, we extend a phase-field approach for pressurized fractures to non-isothermal settings. Specifically, the pressure and the temperature are given quantities and the emphasis is on the correct modeling of the interface laws between a porous medium and the fracture. The resulting model is augmented with thermodynamical arguments and then analyzed from a mechanical perspective. The numerical solution is based on a robust semi-smooth Newton approach in which the linear equation systems are solved with a generalized minimal residual method and algebraic multigrid preconditioning. The proposed modeling and algorithmic developments are substantiated with different examples in two- and three dimensions. We notice that for some of these configurations manufactured solutions can be constructed, allowing for a careful verification of our implementation. Furthermore, crack-oriented predictor–corrector adaptivity and a parallel implementation are used to keep the computational cost reasonable. Snapshots of iteration numbers show an excellent performance of the nonlinear and linear solution algorithms. Lastly, for some tests, a computational analysis of the effects of strain-energy splitting is performed, which has not been undertaken to date for similar phase-field settings involving pressure, fluids or non-isothermal effects."
 }
 
-
-@article{KUMAR2020104027,
-title = "Revisiting nucleation in the phase-field approach to brittle fracture",
-journal = "Journal of the Mechanics and Physics of Solids",
-volume = "142",
-pages = "104027",
-year = "2020",
-issn = "0022-5096",
-doi = "https://doi.org/10.1016/j.jmps.2020.104027",
-url = "http://www.sciencedirect.com/science/article/pii/S0022509620302623",
-author = "Aditya Kumar and Blaise Bourdin and Gilles A. Francfort and Oscar Lopez-Pamies",
-keywords = "Fracture, Strength, Energy methods, Configurational forces, Brittle materials",
-abstract = "Twenty years in since their introduction, it is now plain that the regularized formulations dubbed as phase-field of the variational theory of brittle fracture of Francfort and Marigo (1998) provide a powerful macroscopic theory to describe and predict the propagation of cracks in linear elastic brittle materials under arbitrary quasistatic loading conditions. Over the past ten years, the ability of the phase-field approach to also possibly describe and predict crack nucleation has been under intense investigation. The first of two objectives of this paper is to establish that the existing phase-field approach to fracture at large — irrespectively of its particular version — cannot possibly model crack nucleation. This is so because it lacks one essential ingredient: the strength of the material. The second objective is to amend the phase-field theory in a manner such that it can model crack nucleation, be it from large pre-existing cracks, small pre-existing cracks, smooth and non-smooth boundary points, or within the bulk of structures subjected to arbitrary quasistatic loadings, while keeping undisturbed the ability of the standard phase-field formulation to model crack propagation. The central idea is to implicitly account for the presence of the inherent microscopic defects in the material — whose defining macroscopic manifestation is precisely the strength of the material — through the addition of an external driving force in the equation governing the evolution of the phase field. To illustrate the descriptive and predictive capabilities of the proposed theory, the last part of this paper presents sample simulations of experiments spanning the full range of fracture nucleation settings."
-}
-
 @article{GePlTuDo20,
 author = {Geelen, Rudy and Plews, Julia and Tupek, Michael and Dolbow, John},
 title = {An extended/generalized phase-field finite element method for crack growth with global-local enrichment},
@@ -2022,23 +2041,6 @@ url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6318},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.6318},
 abstract = {Summary An extended/generalized finite element method (XFEM/GFEM) for simulating quasistatic crack growth based on a phase-field method is presented. The method relies on approximations to solutions associated with two different scales: a global scale, that is, structural and discretized with a coarse mesh, and a local scale encapsulating the fractured region, that is, discretized with a fine mesh. A stable XFEM/GFEM is employed to embed the displacement and damage fields at the global scale. The proposed method accommodates approximation spaces that evolve between load steps, while preserving a fixed background mesh for the structural problem. In addition, a prediction-correction algorithm is employed to facilitate the dynamic evolution of the confined crack regions within a load step. Several numerical examples of benchmark problems in two- and three-dimensional quasistatic fracture are provided to demonstrate the approach.},
 year = {2020}
-}
-
-
-
-@article{GePlTuDo20_old,
-author = {Geelen, Rudy and Plews, Julia and Tupek, Michael and Dolbow, John},
-title = {An extended/generalized phase-field finite element method for crack growth with global-local enrichment},
-journal = {International Journal for Numerical Methods in Engineering},
-year = {2020},
-volume = {n/a},
-number = {n/a},
-pages = {},
-keywords = {crack growth, extended/generalized FEM, global-local analysis, gradient damage models, multiscale, phase-fields},
-doi = {10.1002/nme.6318},
-url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6318},
-eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.6318},
-abstract = {Summary An extended/generalized finite element method (XFEM/GFEM) for simulating quasistatic crack growth based on a phase-field method is presented. The method relies on approximations to solutions associated with two different scales: a global scale, that is, structural and discretized with a coarse mesh, and a local scale encapsulating the fractured region, that is, discretized with a fine mesh. A stable XFEM/GFEM is employed to embed the displacement and damage fields at the global scale. The proposed method accommodates approximation spaces that evolve between load steps, while preserving a fixed background mesh for the structural problem. In addition, a prediction-correction algorithm is employed to facilitate the dynamic evolution of the confined crack regions within a load step. Several numerical examples of benchmark problems in two- and three-dimensional quasistatic fracture are provided to demonstrate the approach.}
 }
 
 @Article{Bou99,
@@ -2154,13 +2156,18 @@ doi="10.1186/s40323-018-0105-8",
 url="https://doi.org/10.1186/s40323-018-0105-8"
 }
 
-@misc{aldakheel2021multilevel,
-      title={Multilevel Global-Local techniques for adaptive ductile phase-field fracture}, 
-      author={Fadi Aldakheel and Nima Noii and Thomas Wick and Olivier Allix and Peter Wriggers},
-      year={2021},
-      eprint={2103.02377},
-      archivePrefix={arXiv},
-      primaryClass={math.NA}
+
+@article{aldakheel2021multilevel,
+title = {Multilevel global–local techniques for adaptive ductile phase-field fracture},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {387},
+pages = {114175},
+year = {2021},
+OPTissn = {0045-7825},
+OPTdoi = {https://doi.org/10.1016/j.cma.2021.114175},
+OPTurl = {https://www.sciencedirect.com/science/article/pii/S0045782521005065},
+author = {Fadi Aldakheel and Nima Noii and Thomas Wick and Olivier Allix and Peter Wriggers},
+keywords = {Multilevel global–local method, Phase-field approach, Ductile failure, Mesh adaptivity, Dual mortar method}
 }
 
 @article{Geelen_2019,
@@ -2294,15 +2301,6 @@ volume = {56},
 number = {10},
 pages = {1465-1500},
 year = {2003}
-}
-
-@article{LaOrSue10,
-   author = {C. J. Larsen and C. Ortner and E. S\"uli},
-   title = {Existence of solutions to a regularized model of dynamics fracture},
-  journal = {Methods in Applied Sciences},   
-   year = {2010},
-   volume = {20},
-   pages = {1021--1048}
 }
 
 @article {ChamGiaPon08,
@@ -2469,23 +2467,26 @@ abstract = {This paper presents the application of a fast Fourier transform (FFT
   publisher={Springer}
 }
 
-@misc{noii2020bayesian,
-      title={Bayesian Inversion for Anisotropic Hydraulic Phase-Field Fracture}, 
-      author={Nima Noii and Amirreza Khodadadian and Thomas Wick},
-      year={2020},
-      eprint={2007.16038},
-      archivePrefix={arXiv},
-      primaryClass={cs.CE}
+@article{noii2020bayesian,
+title = {Bayesian inversion for anisotropic hydraulic phase-field fracture},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {386},
+pages = {114118},
+year = {2021},
+OPTissn = {0045-7825},
+OPTdoi = {https://doi.org/10.1016/j.cma.2021.114118},
+OPTurl = {https://www.sciencedirect.com/science/article/pii/S0045782521004497},
+author = {Nima Noii and Amirreza Khodadadian and Thomas Wick},
+keywords = {Phase-field approach, Hydraulic fracture, Fluid-saturated porous media, Anisotropic materials, Bayesian inference, DRAM algorithm}
 }
 
-@misc{noii2021bayesian,
+@article{noii2021bayesian,
       title={Bayesian inversion for unified ductile phase-field fracture}, 
       author={Nima Noii and Amirreza Khodadadian and Jacinto Ulloa and Fadi Aldakheel and Thomas Wick and Stijn Francois and Peter Wriggers},
       year={2021},
-      eprint={2104.11114},
-      archivePrefix={arXiv},
-      primaryClass={math.NA},
-      note = {Accepted for publication in Computational Mechanics}
+      journal={Computational Mechanics},
+      volume={},
+      pages={}
 }
 
 @article{DITTMANN2020112730,
@@ -2585,13 +2586,17 @@ abstract = {In this work, we study the failure behavior of 3D-printed polymer co
 }
 
 
-@misc{mang2021mixed,
-      title={A mixed phase-field fracture model for crack propagation in punctured EPDM strips}, 
-      author={Katrin Mang and Andreas Fehse and Nils Hendrik Kröger and Thomas Wick},
-      year={2021},
-      eprint={2104.14826},
-      archivePrefix={arXiv},
-      primaryClass={math.NA}
+@article{mang2021mixed,
+title = {A mixed phase-field fracture model for crack propagation in punctured EPDM strips},
+journal = {Theoretical and Applied Fracture Mechanics},
+volume = {115},
+pages = {103076},
+year = {2021},
+OPTissn = {0167-8442},
+OPTdoi = {https://doi.org/10.1016/j.tafmec.2021.103076},
+OPTurl = {https://www.sciencedirect.com/science/article/pii/S0167844221001816},
+author = {Katrin Mang and Andreas Fehse and Nils Hendrik Kr{\"o}ger and Thomas Wick},
+keywords = {EPDM rubber, Fatigue testing, Material characterization, Incompressibility, Mixed finite elements, Phase-field fracture}
 }
 
 @article{ARRIAGA201781,
@@ -2694,7 +2699,7 @@ abstract = {The failure behavior of geological materials depends heavily on conf
 @article{LoMau21,
 	author = {L. de Lorenzis and C. Maurini},
 	journal = {International Journal of Fracture},
-    title = {Nucleation under multi-axial loading in variationalphase-field models of brittle fracture},
+    title = {Nucleation under multi-axial loading in variational phase-field models of brittle fracture},
 	pages = {},
 	volume = {},
 	year = {2021}
@@ -2843,3 +2848,104 @@ keywords = {Brittle fracture, Fatigue, Modeling, Paris law, Phase-field models, 
 abstract = {A novel variational framework to model the fatigue behavior of brittle materials based on a phase-field approach to fracture is presented. The standard regularized free energy functional is modified introducing a fatigue degradation function that effectively reduces the fracture toughness as a proper history variable accumulates. This macroscopic approach allows to reproduce the main known features of fatigue crack growth in brittle materials. Numerical experiments show that the Wöhler curve, the crack growth rate curve and the Paris law are naturally recovered, while the approximate Palmgren–Miner criterion and the monotonic loading condition are obtained as special cases.}
 }
 
+@phdthesis{Mandal21,
+  Type = {Dissertation},
+  Title = {Phase field fracture modelling of solids: dynamics, anisotropy, and multi-physics},
+  Author = {Tushar Kanti Mandal},
+  School = {Monash University, Australia},
+  Year = {2021},
+} 
+
+@phdthesis{Al21,
+  Type = {Habilitation thesis},
+  Title = {Simulation of fracture processes using global-local approach and virtual elements},
+  Author = {Fadi Aldakheel},
+  School = {Leibniz University Hannover},
+  Year = {2021},
+}
+
+@article{BobaruZhang2015,
+  title={Why do cracks branch? A peridynamic investigation of dyanmic brittle fracture},
+  author={Bobaru, F. and Zhang, G.},
+  journal={International Journal of Fracture},
+  volume={196(1)},
+  pages={59--98},
+  year={2015},
+}
+
+@article{GERASIMOV2020113353,
+title = {Stochastic phase-field modeling of brittle fracture: Computing multiple crack patterns and their probabilities},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {372},
+pages = {113353},
+year = {2020},
+author = {Tymofiy Gerasimov and Ulrich Römer and Jaroslav Vondřejc and Hermann G. Matthies and Laura {De Lorenzis}},
+keywords = {Brittle fracture, Phase-field model, Multiple solutions, Random perturbation, Stochastic solution, Young measure},
+abstract = {In variational phase-field modeling of brittle fracture, the functional to be minimized is not convex, so that the necessary stationarity conditions of the functional may admit multiple solutions. The solution obtained in an actual computation is typically one out of several local minimizers. Evidence of multiple solutions induced by small perturbations of numerical or physical parameters was occasionally recorded but not explicitly investigated in the literature. In this work, we focus on this issue and advocate a paradigm shift, away from the search for one particular solution towards the simultaneous description of all possible solutions (local minimizers), along with the probabilities of their occurrence. Inspired by recent approaches advocating measure-valued solutions (Young measures as well as their generalization to statistical solutions) and their numerical approximations in fluid mechanics, we propose the stochastic relaxation of the variational brittle fracture problem through random perturbations of the functional. We introduce the concept of stochastic solution, with the main advantage that point-to-point correlations of the crack phase fields in the underlying domain can be captured. These stochastic solutions are represented by random fields or random variables with values in the classical deterministic solution spaces. In the numerical experiments, we use a simple Monte Carlo approach to compute approximations to such stochastic solutions. The final result of the computation is not a single crack pattern, but rather several possible crack patterns and their probabilities. The stochastic solution framework using evolving random fields allows additionally the interesting possibility of conditioning the probabilities of further crack paths on intermediate crack patterns.}
+}
+
+@article{DEBORST201678,
+title = {Gradient damage vs phase-field approaches for fracture: Similarities and differences},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {312},
+pages = {78-94},
+year = {2016},
+note = {Phase Field Approaches to Fracture},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2016.05.015},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782516303796},
+author = {René {de Borst} and Clemens V. Verhoosel},
+keywords = {Fracture, Damage, Gradient models, Phase-field approach},
+abstract = {Gradient-enhanced damage models and phase-field models are seemingly very disparate approaches to fracture. Whereas gradient-enhanced damage models find their roots in damage mechanics, which is a smeared approach from the onset, and gradients were added to restore well-posedness beyond a critical strain level, the phase-field approach to brittle fracture departs from a discontinuous description of failure, where the distribution function is regularised, leading to the inclusion of spatial gradients as well. Herein, we will consider both approaches, and discuss their similarities and differences. The averaging (diffusion) equations for the averaging field and the phase-field will be compared, and it is shown that the diffusion equation for the phase-field can be conceived as a special case of the averaging equation of a gradient-damage model where the damage is averaged. Further, the role of the driving force is examined, and it is shown that subtle differences in the degradation functions commonly adopted in damage and phase-field approaches are key to the observation that, different from damage mechanics, the fracture process zone does not broaden in the wake of the crack tip.}
+}
+
+@ARTICLE{FrieBel10,
+   author = {T.-P. Fries and T. Belytschko},
+   title = {The extended/generalized finite element method: An overview
+of the method and its applications},
+   journal = {Int. J. Numer. Meth. Engrg.},
+   year = {2010},
+   volume = {84},
+   number = {},
+   pages = {253-304},
+   ISSN = {}
+}
+
+
+@article{STROUBOULIS200043,
+title = {The design and analysis of the Generalized Finite Element Method},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {181},
+number = {1},
+pages = {43-69},
+year = {2000},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/S0045-7825(99)00072-9},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782599000729},
+author = {T. Strouboulis and I. Babuška and K. Copps},
+abstract = {In this paper, we introduce the Generalized Finite Element Method (GFEM) as a combination of the classical Finite Element Method (FEM) and the Partition of Unity Method (PUM). The standard finite element spaces are augmented by adding special functions which reflect the known information about the boundary value problem and the input data; e.g., the singular functions obtained from the local asymptotic expansion of the exact solution in the neighborhood of a corner point, etc. The special functions are multiplied with the partition of unity corresponding to the standard linear vertex shape-functions and pasted together with the existing finite element basis to construct an augmented conforming finite element space. In this way, the local approximability afforded by the special functions is included in the approximation, while maintaining the existing infrastructure of finite element codes. The major features of the GFEM are: (1) the essential boundary conditions can be imposed exactly as in the standard FEM, unlike other partition of unity based methods where this is a major issue; (2) the accuracy of the numerical integration of the entries of the stiffness matrix and load vector is controlled adaptively so that the errors in integration of the special functions do not affect the accuracy of the constructed approximation (this issue also has not been sufficiently addressed in other implementations of partition of unity or meshless methods); and (3) linear dependencies in the system of equations are resolved by employing an easy modification of the direct linear solver. The power of the GFEM for solving problems in domains with complex geometry with less error and less computer resources than the standard FEM is illustrated by numerical examples.}
+}
+
+
+@ARTICLE{MoDoBe99,
+   author = {N. Moes and J. Dolbow and T. Belytschko},
+   title = {A finite element method for crack
+growth without remeshing},
+   journal = {Int. J. Numer. Meth. Engrg.},
+   year = {1999},
+   volume = {46},
+   number = {},
+   pages = {131-150},
+   ISSN = {}
+}
+
+@ARTICLE{CeBaChiWu21,
+   author = {M. Cervera and G.B. Barbat and M. Chiumenti and J.-Y. Wu},
+   title = {{A Comparative Review of XFEM, mixed FEM and Phase-Field Models for Quasi-brittle Cracking}},
+   journal = {Archives of Computational Methods in Engineering},
+   year = {2021},
+   volume = {xxx},
+   number = {},
+   pages = {xxx},
+   ISSN = {}
+}
